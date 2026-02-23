@@ -1,0 +1,15 @@
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\bin\Debug\net10.0\Console Labyrinth.exe
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\bin\Debug\net10.0\Console Labyrinth.deps.json
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\bin\Debug\net10.0\Console Labyrinth.runtimeconfig.json
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\bin\Debug\net10.0\Console Labyrinth.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\bin\Debug\net10.0\Console Labyrinth.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.AssemblyInfoInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.AssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.sourcelink.json
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\refint\Console Labyrinth.dll
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.pdb
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\Console Labyrinth.genruntimeconfig.cache
+C:\Users\gabri\OneDrive\Área de Trabalho\Jogos Console\Console Labyrinth\obj\Debug\net10.0\ref\Console Labyrinth.dll
