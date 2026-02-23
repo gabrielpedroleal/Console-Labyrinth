@@ -3,12 +3,12 @@
     { '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#' },
     { '#', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ', ' ', ' ', '#' },
     { '#', '#', '#', ' ', '#', ' ', '#', '#', '#', '#', ' ', '#' },
-    { '#', ' ', ' ', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ', '#' },
+    { '#', ' ', ' ', ' ', ' ', ' ', '#', ' ', '#', ' ', ' ', '#' },
     { '#', ' ', '#', '#', '#', '#', '#', ' ', '#', '#', '#', '#' },
     { '#', ' ', '#', ' ', ' ', ' ', ' ', ' ', '#', ' ', ' ', '#' },
-    { '#', ' ', '#', ' ', '#', '#', '#', '#', '#', ' ', '#', '#' },
+    { '#', ' ', '#', ' ', '#', '#', '#', ' ', '#', ' ', '#', '#' },
     { '#', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ', ' ', ' ', '#' },
-    { '#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', '#', '#' },
+    { '#', '#', '#', '#', '#', ' ', '#', '#', '#', '#', ' ', '#' },
     { '#', ' ', ' ', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ', '#' },
     { '#', ' ', '#', '#', '#', '#', '#', ' ', '#', '#', ' ', 'E' },
     { '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#' }
@@ -39,8 +39,15 @@ while(true)
     
     ConsoleKeyInfo input = Console.ReadKey(true);
     ConsoleKey key = input.Key;
-    if (key == ConsoleKey.UpArrow) playerY--;
-    if (key == ConsoleKey.DownArrow) playerY++;
-    if(key == ConsoleKey.LeftArrow) playerX--;
-    if(key == ConsoleKey.RightArrow) playerX++;
+    if (key == ConsoleKey.UpArrow) if(map[playerY -1, playerX] != '#') playerY--;
+    if (key == ConsoleKey.DownArrow) if(map[playerY +1, playerX] != '#') playerY++;
+    if(key == ConsoleKey.LeftArrow) if(map[playerY, playerX -1] != '#') playerX--;
+    if(key == ConsoleKey.RightArrow) if(map[playerY, playerX +1] != '#') playerX++;
+
+
+    if(map[playerY, playerX] == 'E')
+    {
+        Console.WriteLine("You win!");
+        break;
+    }
 }
