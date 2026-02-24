@@ -9,11 +9,13 @@ private Map CurrentMap;
 private bool IsRunning = true;
 private DateTime Start;
 
+//Calculate how many seconds left the player has.
 private int GetSecondsLeft()
     {
         int secsPassed = (int)(DateTime.Now - Start).TotalSeconds;
         return CurrentMap.TimeLimit - secsPassed;
     }
+//Capture the key and sends to the Player movement method.
 private void ProcessInput()
     {
         var key = Console.ReadKey(true).Key;
@@ -22,6 +24,7 @@ private void ProcessInput()
         if(key == ConsoleKey.LeftArrow) Player.Move(-1,0,CurrentMap);
         if(key == ConsoleKey.RightArrow) Player.Move(1,0,CurrentMap);
     }
+//Verify the conditions of winning or loosing.
 private void Update()
     {
         if(GetSecondsLeft() <= 0)
@@ -42,12 +45,14 @@ private void Update()
             IsRunning = false;
         }
     }
+//Draws the map and time in the console screen.
 private void Render()
     {
         Console.Clear();
         UI.Title($"TIME LEFT: {GetSecondsLeft()}s");
         CurrentMap.DrawMap(Player.PlayerX,Player.PlayerY);
     }
+// Where the magic happens... :D
 public void Run()
     {   
         Start = DateTime.Now;

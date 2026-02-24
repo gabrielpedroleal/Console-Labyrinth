@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Text;
-using System.Data;
+//Grab the maps
 List<Map> maps = LevelData.GetLevels();
 
 bool MenuRunning = true;
@@ -21,6 +20,7 @@ void Menu()
 
         if(option >= 1 && option <= 5)
         {
+            //Creates a new game instance for the selected level and starts the level.
             Game game = new Game(maps[option -1]);
             game.Run();
         } else if(option == 6)

@@ -1,5 +1,6 @@
 internal static class UI
 {
+//Draws a title centralized by lines of asterisks (So it looks a little better... :D)
  public static void Title(string title)
 {
     int numerOfLetters = title.Length;
@@ -8,6 +9,7 @@ internal static class UI
     Console.WriteLine(title);
     Console.WriteLine(asterisks + "\n");
 }
+//Grants that the user types only valid numbers, avoiding crashes.
 public static int IntValidation()
 {
     int result;

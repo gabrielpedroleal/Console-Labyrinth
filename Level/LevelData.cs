@@ -1,5 +1,6 @@
 internal static class LevelData
-{
+{   
+    //Static method that returns a map list ready for the game
     public static List<Map> GetLevels()
     {
         char[,] map1 =
