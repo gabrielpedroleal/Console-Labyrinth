@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Console Labyrinth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75ce80e9997b2a1507192a8a56886c841104ac8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2d7519c648ed48cc0f1ae33b89edb73087251f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Console Labyrinth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Console Labyrinth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
