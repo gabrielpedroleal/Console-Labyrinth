@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 
 List<char[,]> levels = new List<char[,]>();
@@ -95,12 +96,27 @@ char[,] map5 =
     { '█', ' ', ' ', ' ', '█', '█', '█', '█', '█', '█', '█', '█', ' ', ' ', ' ', ' ', ' ', '█', ' ', 'E' },
     { '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█', '█' }
 };
-levels.Add(map1);
-levels.Add(map2);
-levels.Add(map3);
-levels.Add(map4);
-levels.Add(map5);
 
+Map level1 = new(map1,9);
+Player player = new();
+while (true)
+{
+    Console.Clear();
+    level1.DrawMap(player.PlayerX,player.PlayerY);
+    var key = Console.ReadKey(true).Key;
+    if(key == ConsoleKey.UpArrow) player.Move(0,-1,level1);
+    if(key == ConsoleKey.DownArrow) player.Move(0,1,level1);
+    if(key == ConsoleKey.LeftArrow) player.Move(-1,0,level1);
+    if(key == ConsoleKey.RightArrow) player.Move(1,0,level1);
+
+    if(level1.IsExit(player.PlayerY, player.PlayerX))
+    {
+        Console.WriteLine("You win!");
+        break;
+    }
+}
+
+/*
 int IntValidation()
 {
     int result;
@@ -113,13 +129,9 @@ int IntValidation()
     return result;
 }
 
-
-
 void StartLevel(int level, int levelTime)
 {
 
-int X;
-int Y;
 int playerX = 1;
 int playerY = 1;
 
@@ -135,6 +147,7 @@ while(true)
         Console.Clear();
         Title("Game Over");
         Thread.Sleep(2500);
+        Console.Clear();
         break;
     }
 
@@ -142,21 +155,7 @@ while(true)
 
     Title($" TIME LEFT: {secsLeft}s");
 
-    for(X = 0; X < levels[level].GetLength(0); X++)
-    {
-        for(Y = 0; Y < levels[level].GetLength(1); Y++)
-        {
-            if(X == playerY && Y == playerX)
-        {
-            Console.Write('P');
-        } else
-        {
-            Console.Write(levels[level][X, Y]);
-        }
-        }
-        
-    Console.WriteLine();
-    }
+    //DRAW THE MAP
 
     if (Console.KeyAvailable)
     {
@@ -233,3 +232,4 @@ void Menu()
 }
 
 Menu();
+*/

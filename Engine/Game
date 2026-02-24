@@ -1,0 +1,7 @@
+internal class Game 
+{
+private Player Player;
+private Map CurrentMap;
+private bool IsRunning;
+private List<Map> maps = new List<Map>();
+}
