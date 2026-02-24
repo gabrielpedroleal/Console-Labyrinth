@@ -34,7 +34,7 @@ internal class Map
         {
             if(X == playerY && Y == playerX)
         {
-            Console.Write('☺');
+            Console.Write('P');
         } else
         {
             Console.Write(Grid[X, Y]);
