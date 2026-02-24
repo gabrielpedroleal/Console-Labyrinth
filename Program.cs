@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-
-
-List<char[,]> levels = new List<char[,]>();
+using System.Data;
 
 char[,] map1 =
 {
@@ -98,23 +96,16 @@ char[,] map5 =
 };
 
 Map level1 = new(map1,9);
-Player player = new();
-while (true)
-{
-    Console.Clear();
-    level1.DrawMap(player.PlayerX,player.PlayerY);
-    var key = Console.ReadKey(true).Key;
-    if(key == ConsoleKey.UpArrow) player.Move(0,-1,level1);
-    if(key == ConsoleKey.DownArrow) player.Move(0,1,level1);
-    if(key == ConsoleKey.LeftArrow) player.Move(-1,0,level1);
-    if(key == ConsoleKey.RightArrow) player.Move(1,0,level1);
+Map level2 = new(map2,11);
+Map level3 = new(map3, 15);
+Map level4 = new(map4, 16);
+Map level5 = new(map5,16);
+List<Map> maps = new List<Map>{level1,level2,level3,level4,level5};
 
-    if(level1.IsExit(player.PlayerY, player.PlayerX))
-    {
-        Console.WriteLine("You win!");
-        break;
-    }
-}
+
+Game game = new(level5);
+game.Run();
+
 
 /*
 int IntValidation()
